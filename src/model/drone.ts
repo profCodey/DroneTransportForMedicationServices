@@ -1,6 +1,6 @@
 import { DataTypes, Model } from "sequelize";
 import db from "../config/database.config";
-import { MedicationInstance } from "./medications";
+import { MedicationInstance } from "./medication";
 
 interface DronesAttributes {
   id: string;
