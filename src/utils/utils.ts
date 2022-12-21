@@ -10,16 +10,16 @@ export const registerDroneSchema = Joi.object().keys({
   battery: Joi.number().required(),
 });
 
-export const createMedicationSchema = Joi.object().keys({
+export const medicationSchema = Joi.object().keys({
   name: Joi.string().required(),
-  weight: Joi.string().required(),
-  droneId: Joi.string().required(),
   code: Joi.string()
     .trim()
     .lowercase()
     .regex(/^[a-zA-Z0-9_.-]*$/)
     .required(),
   image: Joi.string().required(),
+  weight: Joi.string().required(),
+  droneId: Joi.string().required()
 });
 
 //Generate Token
