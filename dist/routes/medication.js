@@ -5,5 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const router = express_1.default.Router();
+const medicationController_1 = require("../controller/medicationController");
+router.post("/loaddrone", medicationController_1.droneLoadingWithMedication);
 exports.default = router;
 //# sourceMappingURL=medication.js.map

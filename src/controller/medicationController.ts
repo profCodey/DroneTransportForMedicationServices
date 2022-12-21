@@ -4,7 +4,7 @@ import { DroneInstance } from "../model/drone";
 import { MedicationInstance } from "../model/medication";
 import { medicationSchema, options } from "../utils/utils";
 
-export async function loadingDroneWithMedicationItems(
+export async function droneLoadingWithMedication(
   req: Request | any,
   res: Response,
   next: NextFunction
@@ -52,8 +52,8 @@ export async function loadingDroneWithMedicationItems(
     if (weight < weights) {
       return res.status(401).json({
         message:
-          "Weight is greater than the maximum allowed value for this drone",
-        "allowed weight": `${weights} Gr`,
+          "Weight ihas exceed the weight limit fot this drone",
+        "weight allowed": `${weights} Gr`,
       });
     }
     //update drone state

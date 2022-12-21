@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.loadingDroneWithMedicationItems = void 0;
+exports.droneLoadingWithMedication = void 0;
 const uuid_1 = require("uuid");
 const drone_1 = require("../model/drone");
 const medication_1 = require("../model/medication");
 const utils_1 = require("../utils/utils");
-async function loadingDroneWithMedicationItems(req, res, next) {
+async function droneLoadingWithMedication(req, res, next) {
     const id = (0, uuid_1.v4)();
     try {
         const validate = utils_1.medicationSchema.validate(req.body, utils_1.options);
@@ -45,8 +45,8 @@ async function loadingDroneWithMedicationItems(req, res, next) {
         }
         if (weight < weights) {
             return res.status(401).json({
-                message: "Weight is greater than the maximum allowed value for this drone",
-                "allowed weight": `${weights} Gr`,
+                message: "Weight ihas exceed the weight limit fot this drone",
+                "weight allowed": `${weights} Gr`,
             });
         }
         //update drone state
@@ -68,5 +68,5 @@ async function loadingDroneWithMedicationItems(req, res, next) {
         });
     }
 }
-exports.loadingDroneWithMedicationItems = loadingDroneWithMedicationItems;
+exports.droneLoadingWithMedication = droneLoadingWithMedication;
 //# sourceMappingURL=medicationController.js.map

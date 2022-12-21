@@ -1,1 +1,1 @@
-{"version":3,"file":"medication.js","sourceRoot":"","sources":["../../src/routes/medication.ts"],"names":[],"mappings":";;;;;AAAA,sDAA8B;AAC9B,MAAM,MAAM,GAAG,iBAAO,CAAC,MAAM,EAAE,CAAC;AAKhC,kBAAe,MAAM,CAAC"}
+{"version":3,"file":"medication.js","sourceRoot":"","sources":["../../src/routes/medication.ts"],"names":[],"mappings":";;;;;AAAA,sDAA8B;AAC9B,MAAM,MAAM,GAAG,iBAAO,CAAC,MAAM,EAAE,CAAC;AAEhC,6EAAgF;AAChF,MAAM,CAAC,IAAI,CAAC,YAAY,EAAE,iDAA0B,CAAC,CAAC;AAEtD,kBAAe,MAAM,CAAC"}
